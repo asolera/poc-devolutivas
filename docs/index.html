@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <title>POC Devolutivas</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header>
+        <h1>POC Devolutivas</h1>
+    </header>
+
+    <div class="content">
+        <aside>
+            <section id="pesquisaSection">
+                <form id="pesquisaForm">
+                    <input type="text" id="pesquisaInput" placeholder="Pesquise por um termo..." />
+                </form>
+            </section>
+            <section id="pesquisaSubprefeituraSection">
+                <form id="pesquisaSubprefeituraForm">
+                    <label for="subprefeiturasFiltro">Filtrar por Subprefeitura:</label>
+                    <ul id="subprefeiturasFiltro"></ul>
+                </form>
+            </section>
+        </aside>
+
+        <section id="resultados"></section>
+    </div>
+    
+    <script src="js/papaparse.min.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/pesquisa_termo.js"></script>
+    <script src="js/subprefeitura.js"></script>
+    <script src="js/filtros.js"></script>
+    <script src="js/load_csv.js"></script>
+</body>
+</html>

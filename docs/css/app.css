@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    min-height: 100%;
+    background-color: #f8f9fa;
+}
+
+:root {
+    --default-padding: 15px;
+}
+
+header h1 {
+    height: 10%;
+    background-color: #e2eafc;
+    margin-bottom: 0px !important;
+    padding: var(--default-padding);
+}
+
+.content {
+    display: flex;
+    height: 90%;
+    justify-content: space-between;
+}
+
+aside {
+    background-color: #edf2fb;
+    height: 100%;
+    padding: var(--default-padding);
+    min-width: 30%;
+    overflow:auto;
+}
+
+#resultados {
+    height: 100%;
+    padding: var(--default-padding);
+    text-align: justify;
+    max-width: 70%;
+}
+
+#listaResultados li {
+    list-style: none;
+}
+
+#listaResultados h5 {
+    margin-bottom: 0px !important;
+}
+
+.resposta {
+    white-space: pre-wrap;
+}
+
+#pesquisaInput {
+    width: 100%;
+}
+
+#pesquisaSubprefeituraForm input, #pesquisaSubprefeituraForm label {
+    display: inline-block;
+}
+
+#pesquisaSubprefeituraForm li {
+    list-style: none;
+    margin-bottom: 0.2px !important;
+}
+
+#pesquisaSubprefeituraForm input, #pesquisaSubprefeituraForm label {
+    margin-bottom: 0.2px !important;
+}
