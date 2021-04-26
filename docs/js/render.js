@@ -6,8 +6,6 @@ function renderResultados(conteudo) {
 
 function renderDevolutivas(devolutivas) {
 
-    console.log(`Renderizando ${devolutivas.length} devolutivas...`);
-
     if (devolutivas.length < 1) {
         renderResultados('<p>Não foi encontrado nenhum resultado para a sua pesquisa!</p>');
     } else {
