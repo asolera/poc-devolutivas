@@ -1,6 +1,9 @@
 const tempoInicial = new Date();
 
 const csvPath = 'base-exemplo.csv';
+const VERSAO = '1.0.0';
+
+console.log(`Versão: ${VERSAO}`);
 
 loadingLigar();
 csvParse(csvPath)
