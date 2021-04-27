@@ -29,8 +29,7 @@ $(document).ready(function() {
         $(e.currentTarget).find("option:selected").each(function(i, selected) { 
             values[i] = $(selected).text();
         });
-        ultimaSubprefeituraSelecionada = values.splice(-1)[0];
-        store.filtros.subprefeituras.push(ultimaSubprefeituraSelecionada);
+        store.filtros.subprefeituras = values;
         filtroPesquisar();
     });
     
