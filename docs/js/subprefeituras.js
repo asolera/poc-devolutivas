@@ -37,7 +37,6 @@ $(document).ready(function() {
         });
         ultimaSubprefeituraSelecionada = values.splice(-1)[0];
         store.filtros.subprefeituras.push(ultimaSubprefeituraSelecionada);
-        console.log(store.filtros.subprefeituras)
         filtroPesquisar();
     });
     
