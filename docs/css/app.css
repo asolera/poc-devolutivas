@@ -23,7 +23,7 @@ header h1 {
     padding: var(--default-padding);
 }
 
-.content {
+main {
     display: flex;
     height: 88%;
     justify-content: space-between;
@@ -31,15 +31,18 @@ header h1 {
 
 aside {
     background-color: var(--light);
+    box-sizing: border-box;
     height: 100%;
     padding: var(--default-padding);
-    min-width: 30%;
+    min-width: 20%;
     overflow:auto;
 }
 
-#resultados {
+#conteudo {
+    box-sizing: border-box;
     height: 100%;
-    max-width: 70%;
+    min-width: 80%;
+    max-width: 80%;
     overflow: auto;
     padding: var(--default-padding);
     text-align: justify;
@@ -51,10 +54,6 @@ aside {
 
 #listaResultados h5 {
     margin-bottom: 0px !important;
-}
-
-.resposta {
-    white-space: pre-wrap;
 }
 
 #pesquisaInput {
@@ -76,4 +75,44 @@ aside {
 
 #pesquisaSubprefeituraForm input, #pesquisaSubprefeituraForm label {
     margin-bottom: 0.2px !important;
+}
+
+.erro {
+    color: crimson;
+}
+
+table.devolutiva {
+    border: 1px solid gray;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+table.devolutiva td {
+    padding: 10px;
+}
+
+td.campo {
+    background-color: var(--light);
+    font-weight: bold;
+    width: 120px;
+}
+
+td.valor {
+    white-space: pre-wrap;
+}
+
+h5.carregar_mais {
+    text-align: center;
+}
+
+.loading {
+    display: none;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 3em;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }

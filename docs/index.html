@@ -9,16 +9,20 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+    <div class="loading">Carregando dados...</div>
     <header>
         <h1>POC Devolutivas</h1>
     </header>
 
-    <div class="content">
+    <main>
         <aside>
             <section id="pesquisaSection">
                 <form id="pesquisaForm">
                     <input type="text" id="pesquisaInput" placeholder="Pesquise por um termo..." />
                 </form>
+            </section>
+            <section id="limparFiltrosSection">
+                <a href="#" id="limparFiltros">Limpar Filtros</a>
             </section>
             <section id="pesquisaSubprefeituraSection">
                 <form id="pesquisaSubprefeituraForm">
@@ -28,14 +32,19 @@
             </section>
         </aside>
 
-        <section id="resultados"></section>
-    </div>
+        <section id="conteudo"></section>
+    </main>
     
     <script src="js/papaparse.min.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/devolutivas.js"></script>
+    <script src="js/filtro.js"></script>
+    <script src="js/pesquisa_texto.js"></script>
+    <script src="js/subprefeituras.js"></script>
     <script src="js/render.js"></script>
-    <script src="js/pesquisa_termo.js"></script>
-    <script src="js/subprefeitura.js"></script>
-    <script src="js/filtros.js"></script>
-    <script src="js/load_csv.js"></script>
+    <script src="js/csv.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
