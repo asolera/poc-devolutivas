@@ -75,23 +75,6 @@ aside {
     width: 100%;
 }
 
-#pesquisaForm {
-    margin-bottom: 0px !important;
-}
-
-#pesquisaSubprefeituraForm input, #pesquisaSubprefeituraForm label {
-    display: inline-block;
-}
-
-#pesquisaSubprefeituraForm li {
-    list-style: none;
-    margin-bottom: 0.2px !important;
-}
-
-#pesquisaSubprefeituraForm input, #pesquisaSubprefeituraForm label {
-    margin-bottom: 0.2px !important;
-}
-
 .erro {
     color: crimson;
 }
@@ -142,4 +125,8 @@ h5.carregar_mais {
 
 #limparFiltrosSection {
     margin-bottom: 1rem;
+}
+
+.select2-container {
+    margin-bottom: 20px !important;
 }

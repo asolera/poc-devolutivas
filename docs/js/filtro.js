@@ -1,7 +1,8 @@
 function filtroPesquisar() {
-    if (store.filtros.termo.length > 2 || store.filtros.subprefeituras.length > 0) {
+    if (store.filtros.termo.length > 2 || store.filtros.subprefeituras.length > 0 || store.filtros.secretarias.length > 0) {
         devolutivasFiltrarPorTermoPesquisado();
         devolutivasFiltrarPorSubprefeitura();
+        devolutivasFiltrarPorSecretaria();
         renderDevolutivasFiltradas();
     } else {
         renderDadosCarregamento();
@@ -11,8 +12,10 @@ function filtroPesquisar() {
 function filtroLimpar() {
     pesquisaTextoLimpar();
     subprefeiturasFiltroLimpar();
+    secretariasFiltroLimpar();
     store.filtros = {
         termo: '',
+        secretarias: [],
         subprefeituras: []
     };
     filtroPesquisar();

@@ -7,3 +7,9 @@ function devolutivasFiltrarPorSubprefeitura() {
         store.devolutivasFiltradas = store.devolutivasFiltradas.filter(devolutiva => store.filtros.subprefeituras.includes(devolutiva.subprefeitura));
     }
 }
+
+function devolutivasFiltrarPorSecretaria() {
+    if (store.filtros.secretarias.length > 0) {
+        store.devolutivasFiltradas = store.devolutivasFiltradas.filter(devolutiva => store.filtros.secretarias.includes(devolutiva.secretaria));
+    }
+}
