@@ -8,6 +8,7 @@ function secretariasCarregar() {
         $('#selectSecretarias').append(newOption).trigger('change');
     });
     store.secretarias = secretarias;
+    $('#selectSecretarias').prop("disabled", false);
 }
 
 function secretariasFiltroLimpar() {
@@ -20,6 +21,7 @@ $(document).ready(function() {
         height: '70px',
         width: 'resolve'
     });
+    $('#selectSecretarias').prop("disabled", true);
 
     $('#selectSecretarias').on('select2:select', e => {
         let values = [];

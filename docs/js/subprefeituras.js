@@ -11,6 +11,7 @@ function subprefeiturasCarregar() {
         $('#selectSubprefeituras').append(newOption).trigger('change');
     });
     store.subprefeituras = subprefeituras;
+    $('#selectSubprefeituras').prop("disabled", false);
 }
 
 function subprefeiturasFiltroLimpar() {
@@ -23,6 +24,7 @@ $(document).ready(function() {
         height: '70px',
         width: 'resolve'
     });
+    $('#selectSubprefeituras').prop("disabled", true);
 
     $('#selectSubprefeituras').on('select2:select', e => {
         let values = [];
