@@ -14,13 +14,7 @@ function subprefeiturasCarregar() {
 }
 
 function subprefeiturasFiltroLimpar() {
-    const subprefeiturasCheckboxes = document.querySelectorAll("#subprefeiturasFiltro input[type=checkbox]");
-
-    subprefeiturasCheckboxes.forEach(checkbox => {
-        if (checkbox.checked) {
-            checkbox.checked = false;
-        }
-    });
+    $('#selectSubprefeituras').val(null).trigger('change');
 }
 
 $(document).ready(function() {

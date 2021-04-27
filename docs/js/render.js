@@ -14,7 +14,6 @@ function renderDevolutivasFiltradas() {
     } else {
         renderConteudo(`
             <h5>Foram encontradas <strong>${store.devolutivasFiltradas.length}</strong> devolutivas. Exibindo as ${store.limiteResultados} primeiras...</h5>
-            <hr>
             <ul id="listaResultados">
                 ${store.devolutivasFiltradas.map(devolutiva => {
                     return `
