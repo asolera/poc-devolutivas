@@ -3,11 +3,11 @@ function subprefeiturasAdicionarEventos() {
 
     subprefeiturasCheckboxes.forEach(checkbox => {
         checkbox.addEventListener('change', e => {
-            const subprefeitura = e.target.value;
+            const subprefeituraCheckbox = e.target.value;
             if (e.target.checked) {
-                store.filtros.subprefeituras.push(subprefeitura);
+                store.filtros.subprefeituras.push(subprefeituraCheckbox);
             } else {
-                store.filtros.subprefeituras = store.filtros.subprefeituras.filter(subprefeitura => subprefeitura !== subprefeitura);
+                store.filtros.subprefeituras = store.filtros.subprefeituras.filter(subprefeitura => subprefeitura !== subprefeituraCheckbox);
             }
             filtroPesquisar();
         });
