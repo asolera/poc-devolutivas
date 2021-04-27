@@ -3,28 +3,34 @@ html, body {
     font-family: 'Roboto', sans-serif;
     height: 100%;
     min-height: 100%;
-    background-color: #f8f9fa;
+    background-color: var(--white);
 }
 
 :root {
     --default-padding: 15px;
+    --white: #fefefe;
+    --light: #F9F9F9;
+    --orange: #EF7C4C;
 }
 
 header h1 {
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 600;
     height: 10%;
-    background-color: #e2eafc;
+    background-color: var(--orange);
     margin-bottom: 0px !important;
     padding: var(--default-padding);
 }
 
 .content {
     display: flex;
-    height: 90%;
+    height: 88%;
     justify-content: space-between;
 }
 
 aside {
-    background-color: #edf2fb;
+    background-color: var(--light);
     height: 100%;
     padding: var(--default-padding);
     min-width: 30%;
@@ -33,9 +39,10 @@ aside {
 
 #resultados {
     height: 100%;
+    max-width: 70%;
+    overflow: auto;
     padding: var(--default-padding);
     text-align: justify;
-    max-width: 70%;
 }
 
 #listaResultados li {
@@ -52,6 +59,10 @@ aside {
 
 #pesquisaInput {
     width: 100%;
+}
+
+#pesquisaForm {
+    margin-bottom: 0px !important;
 }
 
 #pesquisaSubprefeituraForm input, #pesquisaSubprefeituraForm label {
