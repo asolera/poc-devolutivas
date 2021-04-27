@@ -2,6 +2,7 @@
 html, body {
     font-family: 'Roboto', sans-serif;
     height: 100%;
+    line-height: 1.6;
     min-height: 100%;
     background-color: var(--white);
 }
@@ -15,12 +16,18 @@ html, body {
 
 header h1 {
     color: var(--white);
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 600;
     height: 10%;
     background-color: var(--orange);
-    margin-bottom: 0px !important;
+    margin: 0px !important;
     padding: var(--default-padding);
+}
+
+h5 {
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 2rem;
 }
 
 main {
@@ -57,6 +64,14 @@ aside {
 }
 
 #pesquisaInput {
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+    height: 38px;
+    margin-bottom: 10px;
+    padding: 6px 10px;
     width: 100%;
 }
 
@@ -115,4 +130,16 @@ h5.carregar_mais {
     justify-content: center;
     text-align: center;
     width: 100%;
+}
+
+.select2-selection.select2-selection--multiple {
+    min-height: 100px;
+}
+
+#limparFiltros {
+    color: #1EAEDB;
+}
+
+#limparFiltrosSection {
+    margin-bottom: 1rem;
 }

@@ -12,8 +12,6 @@ csvParse(csvPath)
         renderDadosCarregamento();
         pesquisaTextoAdicionarEventos();
         subprefeiturasCarregar();
-        renderFiltrosSubprefeitura();
-        subprefeiturasAdicionarEventos();
     })
     .catch(err => {
         loadingDesligar();
