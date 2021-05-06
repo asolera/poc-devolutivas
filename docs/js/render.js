@@ -1,5 +1,5 @@
 function renderConteudo(conteudo) {
-    const conteudoSection = document.getElementById("conteudo");
+    const conteudoSection = document.getElementById("resultado");
     conteudoSection.innerHTML = conteudo;
 }
 
